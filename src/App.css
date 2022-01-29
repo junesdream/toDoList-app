@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.navbar{
+background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+width: 100%;
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #AF9500;
+border-bottom: 2px solid #87FF2A;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer{
+  background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+width: 100%;
+height: 10vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #AF9500;
+border-top: 2px solid #87FF2A;
+font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f907fc;
+background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+display: flex;
+flex-direction: column; 
+align-items: center;
+position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todos-container-parent{
+width: 40%;
+}
+
+.todos-container-child{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  background-color: #FF007C;
+  margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+border:2px solid #00ff2a;
+
 }
 
-.App-link {
-  color: #61dafb;
+span{
+color: #FF007C;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+    font-weight: bold;
+}
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+
+.total{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 24px;
+background-image: linear-gradient(0deg, #f00 25%, #ffb300 60%);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.input-container{
+  margin-top: 30px;
+}
+
+input {
+  padding: 5px;
+  font-size: 18px;
+  width: 200px;
+  border-radius: 5px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+
+}
+
+button{
+  padding: 5px;
+  color: #fff;
+  background-color: #FF007C;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  width: 100px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.icon{
+  font-size: 30px;
+  color:#00ff2a;
+}
+
+.todo-text{
+  margin-left: 10px;
+
 }
